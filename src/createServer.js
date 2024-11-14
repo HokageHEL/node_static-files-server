@@ -11,7 +11,6 @@ function createServer() {
 
     res.setHeader('Content-Type', 'text/plain');
 
-    // Check if URL starts with '/file'
     if (!req.url.startsWith('/file')) {
       res.statusCode = 400;
       res.end('Invalid request');
